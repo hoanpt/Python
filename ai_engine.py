@@ -131,8 +131,8 @@ def ai_import_from_images(api_key: str, images_bytes: list, extra: str = "") -> 
     for img_b, mime in images_bytes:
         parts.append(types.Part.from_bytes(data=img_b, mime_type=mime))
     parts.append(types.Part.from_text(
-        f"Hay doc tat ca cac anh de thi tren va tach tung bai toan.\n"
-        f"Yeu cau bo sung: {extra or 'Tach tat ca bai toan'}"
+        text=f"Hay doc tat ca cac anh de thi tren va tach tung bai toan.\n"
+             f"Yeu cau bo sung: {extra or 'Tach tat ca bai toan'}"
     ))
 
     resp = client.models.generate_content(
