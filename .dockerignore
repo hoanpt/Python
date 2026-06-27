@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+data/
+*.db
+.env
+config.json
+_preview_cache.json
+*.json.bak
+LQD/
+.vscode/
+.idea/
+.git/

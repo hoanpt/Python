@@ -1,0 +1,7 @@
+# Mini Online Judge v3.0 — Dependencies
+# Cai dat: pip install -r requirements.txt
+
+fastapi>=0.111.0          # Web framework
+uvicorn[standard]>=0.29.0 # ASGI server
+google-genai>=0.8.0       # Google Gemini AI SDK
+python-multipart>=0.0.9   # Form data parsing (bat buoc cho FastAPI)
